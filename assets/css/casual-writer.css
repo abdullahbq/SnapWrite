@@ -1,0 +1,260 @@
+nav p {
+    border-bottom: 1px dotted rgb(0, 0, 0);
+    padding-top: 8px;
+    font-weight: 900;
+    font-size: 22px;
+    margin: 0px;
+}
+
+nav li {
+    margin-left: 8px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+#header {
+    background: var(--bs-success);
+    color: white;
+    width: 100%;
+    height: 60px;
+}
+
+#title {
+    float: left;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 0px 8px;
+}
+
+#subtitle {
+    font-size: 75%;
+    padding: 0px 8px;
+}
+
+#menu {
+    padding: 8px 8px;
+}
+
+#menu button,
+#menu a {
+    text-decoration: none;
+    border: none;
+    padding: 8px 12px;
+    color: inherit;
+}
+
+#menu button:hover,
+#menu a:hover {
+    color: #222;
+    background: #ffd700;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#left-panel {
+    position: absolute;
+    left: 0;
+    width: 340px;
+    top: 60px;
+    padding: 0px 8px;
+}
+
+#right-panel {
+    position: absolute;
+    right: 0;
+    left: 360px;
+    top: 60px;
+    border-left: 1px dotted rgb(0, 0, 0);
+    padding: 0px 8px;
+}
+
+.dark,
+.dark pre,
+.dark code,
+.dark blockquote {
+    background: #222 !important;
+    color: #ccc !important;
+}
+
+.dark #header {
+    background: #333;
+}
+
+.dark a {
+    color: #eee;
+}
+
+.dark th,
+.dark tr:nth-child(even) {
+    color: #333;
+}
+
+@media print {
+
+    #header,
+    #left-panel {
+        display: none !important;
+    }
+
+    #right-panel {
+        position: relative;
+        width: 100% !important;
+        left: 0px !important;
+        top: 0px;
+        border: none;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #header {
+        width: 100%;
+        height: 60px;
+    }
+
+    #left-panel {
+        display: none;
+        position: absolute;
+        left: 0px !important;
+        width: 100% !important;
+        top: 60px;
+        padding: 0px 8px;
+    }
+
+    #right-panel {
+        position: absolute;
+        left: 0px !important;
+        width: 100%;
+        top: 60px;
+        overflow: auto;
+        padding: 0px 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        width: 100%;
+        height: 100px;
+    }
+
+    #left-panel {
+        display: none;
+        position: absolute;
+        left: 0px !important;
+        width: 100% !important;
+        top: 100px;
+        padding: 0px 8px;
+    }
+
+    #right-panel {
+        position: absolute;
+        left: 0px !important;
+        width: 100%;
+        top: 100px;
+        overflow: auto;
+        padding: 0px 8px;
+    }
+}
+
+.markdown code {
+    background: #f0f0f0;
+    color: navy;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.markdown pre {
+    background: #f0f0f0;
+    margin: 12px;
+    border: 1px solid #ddd;
+    padding: 20px 12px;
+    border-radius: 5px;
+}
+
+.markdown pre:hover button {
+    display: block;
+}
+
+.markdown pre button {
+    display: none;
+    position: relative;
+    float: right;
+    top: -16px;    
+    border: none;
+    border-radius: 5px;
+    background: #777;
+    color: #eee;
+    padding: 5px;
+}
+
+.markdown blockquote {
+    background: #f0f0f0;
+    border-left: 5px solid grey;
+    padding: 8px;
+}
+
+.markdown table {
+    margin: 12px;
+    border-collapse: collapse;
+}
+
+.markdown th {
+    border: 1px solid grey;
+    background: lightgrey;
+    padding: 6px;
+}
+
+.markdown td {
+    border: 1px solid grey;
+    padding: 6px;
+}
+
+.markdown tr:nth-child(even) {
+    background: #f0f0f0;
+}
+
+.markdown ins {
+    color: #890604;
+}
+
+.markdown rem {
+    color: #198964;
+}
+
+.toc ul {
+    padding: 0 12px;
+}
+
+.toc .H1 {
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 4px;
+}
+
+.toc .H2 {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+.toc .H3 {
+    font-size: 16px;
+    margin-left: 3em;
+}
+
+.toc .H4 {
+    margin-left: 4em;
+}
+
+.toc .active {
+    color: #0057b7;
+}
+
+.toc li:hover {
+    font-weight: 700;
+    color: #0057b7;
+}
